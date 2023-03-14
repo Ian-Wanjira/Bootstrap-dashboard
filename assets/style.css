@@ -7,3 +7,38 @@
 html{
     scroll-behavior: smooth;
 }
+
+.sidebar-heading{
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.nav-link[data-bs-toggle="collapse"]::after{
+    content: "\F231";
+    font-family: 'Bootstrap-icons';
+    float: right;
+    
+}
+
+li {
+    padding: .5rem;
+    
+}
+
+.sidebar #sidebarToggle {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    
+}
+
+#sidebarToggle::after {
+    font-weight: 900;
+    content: ' \F12F';
+    font-family: 'Bootstrap-icons';
+    margin-right: 0.1rem;
+}

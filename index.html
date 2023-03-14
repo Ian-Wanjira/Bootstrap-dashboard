@@ -12,10 +12,14 @@
       crossorigin="anonymous"
     />
 
+    
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+
+
 
     <link rel="stylesheet" href="/assets/style.css" />
 
@@ -26,21 +30,118 @@
     <div class="container-fluid">
       <div class="row flex-nowrap">
         <!-- Sidebar Navigation Starts -->
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 ">
-          
-          <nav class="navbar" >
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0">
+          <nav class="navbar">
             <div class="container-fluid d-flex flex-column">
-              <a href="#" class="navbar-brand ">
-                <span class="mx-3">WP Admin</span>
-                <i class="bi bi-activity"></i>
+              <a href="#" class="navbar-brand">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span class="mx-">WP Admin</span>
               </a>
-              <hr class="border border-tertiary border-1 opacity-100 w-100">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a href="" class="nav-link">Dashboard</a></li>
+              <hr class="border border-tertiary border-1 opacity-25 w-100" />
+              <ul class="navbar-nav w-100 navigation accordion sidebar" id="accordionSidebar">
+                <a href="" class="nav-link">
+                  <i class="bi bi-speedometer2 mx-2"></i>
+                  <span>Dashboard</span>
+                </a>
+                <hr class="border border-tertiary border-1 opacity-25 w-100" />
+                <p class="sidebar-heading">INTERFACE</p>
+                <li class="nav-item">
+                  <a
+                    href=""
+                    class="nav-link collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#components"
+                  >
+                    <i class="bi bi-gear-fill mx-2"></i>
+                    <span>Components</span>
+                  </a>
+                  <div
+                    id="components"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar"
+                  >
+                    <div class="bg-white py-2 collapse-inner rounded" >
+                      <h6 class="collapse-header">Custom Components:</h6>
+                      <a class="collapse-item" href="buttons.html">Buttons</a>
+                      <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href=""
+                    class="nav-link collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#utilities"
+                  >
+                    <i class="bi bi-wrench mx-2"></i>
+                    <span>Utilities</span>
+                  </a>
+                  <div
+                    id="utilities"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar"
+                  >
+                    <div class="bg-white py-2 collapse-inner rounded" >
+                      <h6 class="collapse-header">Custom Components:</h6>
+                      <a class="collapse-item" href="buttons.html">Buttons</a>
+                      <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                  </div>
+                </li>
+                <hr class="border border-tertiary border-1 opacity-25 w-100" />
+                <p class="sidebar-heading">ADDONS</p>
+                <li class="nav-item">
+                  <a
+                    href=""
+                    class="nav-link collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#pages"
+                  >
+                    <i class="bi bi-folder mx-2"></i>
+                    <span>Pages</span>
+                  </a>
+                  <div
+                    id="pages"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar"
+                  >
+                    <div class="bg-white py-2 collapse-inner rounded" >
+                      <h6 class="collapse-header">Custom Components:</h6>
+                      <a class="collapse-item" href="buttons.html">Buttons</a>
+                      <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <i class="bi bi-graph-up mx-2"></i>
+                    <span>Charts</span></a>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <i class="bi bi-table mx-2"></i>
+                    <span>Tables</span></a>
+                  </a>
+                </li>
+                <hr class="border border-tertiary border-1 opacity-25 w-100" />
+                <!-- Sidebar Toggler (Sidebar) -->
+                <div class="text-center d-none d-md-inline">
+                  <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                </div>
+                <!-- Sidebar Message -->
+                <div class="sidebar-card d-none d-lg-flex flex-column">
+                  
+                  <p class="text-center mb-2"><strong>WP Admin</strong> is powered with bootstrap5!</p>
+                  <a class="btn btn-success btn-sm" href="https://getbootstrap.com/">Bootstrap</a>
+                </div>
               </ul>
             </div>
           </nav>
-          
         </div>
         <!-- Sidebar Navigation Ends -->
 
@@ -48,10 +149,9 @@
         <div class="col">Main Content goes here...</div>
         <!-- Main Content Ends -->
       </div>
-     
     </div>
     <!-- Main Container ends-->
-    
+   
 
     <script src="/assets/index.js"></script>
 
