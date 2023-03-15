@@ -269,7 +269,7 @@
       <div class="main-content d-flex flex-column">
        
         <div class="content">
-          <nav class="navbar navbar-expand-lg shadow topbar">
+          <nav class="navbar navbar-expand-lg shadow topbar ">
             <div class="container-fluid hstack gap-3">
               <form class="input-group ms-5  navbar-search" role="search">
                 <input class="form-control " type="search" placeholder="Search" aria-label="Search">
@@ -278,15 +278,29 @@
 
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a href="" class="nav-link"><i class="bi bi-bell-fill"></i></a>
+                  <a href="" class="nav-link">
+                    <i class="bi bi-bell-fill position-relative">
+                      <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                      
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </i>
+                    
+                  </a>
                 </li>
-                <li class="nav-item">
-                  <a href="" class="nav-link"><i class="bi bi-envelope-fill"></i></a>
-                </li>
-                <div class="vr mt-3"></div>
                 <li class="nav-item">
                   <a href="" class="nav-link">
-                    <span>Ian Mwangi</span>
+                    <i class="bi bi-envelope-fill position-relative">
+                      <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </i>
+                  </a>
+                </li>
+                <div class="vr"></div>
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <span class="pe-2">Ian Mwangi</span>
                     <img src="assets/birth-of-milkyway.png" alt="" class="rounded-circle img-profile">
                   </a>
                 </li>
@@ -295,6 +309,13 @@
 
             </div>  
           </nav>
+
+          <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
         </div>
         
 

@@ -68,6 +68,7 @@ li {
 
 .vr{
     height: calc(4.1rem - 2.3rem);
+    margin: auto 1rem;
 }
 
 .nav-link .img-profile{
