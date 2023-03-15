@@ -27,11 +27,11 @@
   </head>
   <body>
     <!-- Main Container -->
-    <div class="container-fluid">
-      <div class="row flex-nowrap">
-        <!-- Sidebar Navigation Starts -->
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0">
-          <nav class="navbar">
+    <!-- <div class="container-fluid">
+      <div class="row flex-nowrap main">
+        
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-primary">
+          <nav class="navbar ">
             <div class="container-fluid d-flex flex-column">
               <a href="#" class="navbar-brand">
                 <i class="fa fa-home" aria-hidden="true"></i>
@@ -129,11 +129,11 @@
                   </a>
                 </li>
                 <hr class="border border-tertiary border-1 opacity-25 w-100" />
-                <!-- Sidebar Toggler (Sidebar) -->
+                
                 <div class="text-center d-none d-md-inline">
                   <button class="rounded-circle border-0" id="sidebarToggle"></button>
                 </div>
-                <!-- Sidebar Message -->
+                
                 <div class="sidebar-card d-none d-lg-flex flex-column">
                   
                   <p class="text-center mb-2"><strong>WP Admin</strong> is powered with bootstrap5!</p>
@@ -143,14 +143,167 @@
             </div>
           </nav>
         </div>
-        <!-- Sidebar Navigation Ends -->
-
-        <!-- Main Content Starts -->
+        
         <div class="col">Main Content goes here...</div>
-        <!-- Main Content Ends -->
+        
+      </div>
+    </div> -->
+
+    <div class="wrapper d-flex">
+      <div class="sidebar">
+        <nav class="navbar bg-dark d-flex flex-column" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <span class="mx-">WP Admin</span>
+            </a>
+            <hr class="border border-tertiary border-1 opacity-25 w-100" />
+            <ul class="navbar-nav w-100 navigation accordion sidebar" id="accordionSidebar">
+              <a href="" class="nav-link">
+                <i class="bi bi-speedometer2 mx-2"></i>
+                <span>Dashboard</span>
+              </a>
+              <hr class="border border-tertiary border-1 opacity-25 w-100" />
+              <p class="sidebar-heading">INTERFACE</p>
+              <li class="nav-item">
+                <a
+                  href=""
+                  class="nav-link collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#components"
+                >
+                  <i class="bi bi-gear-fill mx-2"></i>
+                  <span>Components</span>
+                </a>
+                <div
+                  id="components"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionSidebar"
+                >
+                  <div class="bg-white py-2 collapse-inner rounded" >
+                    <h6 class="collapse-header">Custom Components:</h6>
+                    <a class="collapse-item" href="buttons.html">Buttons</a>
+                    <a class="collapse-item" href="cards.html">Cards</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  href=""
+                  class="nav-link collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#utilities"
+                >
+                  <i class="bi bi-wrench mx-2"></i>
+                  <span>Utilities</span>
+                </a>
+                <div
+                  id="utilities"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionSidebar"
+                >
+                  <div class="bg-white py-2 collapse-inner rounded" >
+                    <h6 class="collapse-header">Custom Components:</h6>
+                    <a class="collapse-item" href="buttons.html">Buttons</a>
+                    <a class="collapse-item" href="cards.html">Cards</a>
+                  </div>
+                </div>
+              </li>
+              <hr class="border border-tertiary border-1 opacity-25 w-100" />
+              <p class="sidebar-heading">ADDONS</p>
+              <li class="nav-item">
+                <a
+                  href=""
+                  class="nav-link collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#pages"
+                >
+                  <i class="bi bi-folder mx-2"></i>
+                  <span>Pages</span>
+                </a>
+                <div
+                  id="pages"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionSidebar"
+                >
+                  <div class="bg-white py-2 collapse-inner rounded" >
+                    <h6 class="collapse-header">Custom Components:</h6>
+                    <a class="collapse-item" href="buttons.html">Buttons</a>
+                    <a class="collapse-item" href="cards.html">Cards</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="bi bi-graph-up mx-2"></i>
+                  <span>Charts</span></a>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="bi bi-table mx-2"></i>
+                  <span>Tables</span></a>
+                </a>
+              </li>
+              <hr class="border border-tertiary border-1 opacity-25 w-100" />
+              
+              <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+              </div>
+              
+              <div class="sidebar-card d-none d-lg-flex flex-column">
+                
+                <p class="text-center mb-2 text-light"><strong>WP Admin</strong> is powered with bootstrap5!</p>
+                <a class="btn btn-success btn-sm" href="https://getbootstrap.com/">Bootstrap</a>
+              </div>
+            </ul>
+          </div>
+  
+        </nav>
+      </div>
+      
+
+      <div class="main-content d-flex flex-column">
+       
+        <div class="content">
+          <nav class="navbar navbar-expand-lg shadow topbar">
+            <div class="container-fluid hstack gap-3">
+              <form class="input-group ms-5  navbar-search" role="search">
+                <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+              </form>
+
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="" class="nav-link"><i class="bi bi-bell-fill"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link"><i class="bi bi-envelope-fill"></i></a>
+                </li>
+                <div class="vr mt-3"></div>
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <span>Ian Mwangi</span>
+                    <img src="assets/birth-of-milkyway.png" alt="" class="rounded-circle img-profile">
+                  </a>
+                </li>
+              </ul>
+              
+
+            </div>  
+          </nav>
+        </div>
+        
+
+        <div class="footer">
+          footer
+        </div>
       </div>
     </div>
-    <!-- Main Container ends-->
+    
    
 
     <script src="/assets/index.js"></script>

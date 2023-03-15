@@ -6,6 +6,16 @@
 
 html{
     scroll-behavior: smooth;
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.sidebar nav{
+    width: 14.5rem;
+    height: 100vh;
 }
 
 .sidebar-heading{
@@ -41,4 +51,26 @@ li {
     content: ' \F12F';
     font-family: 'Bootstrap-icons';
     margin-right: 0.1rem;
+}
+
+.topbar{
+    height: 4.1rem;
+}
+
+.topbar .navbar-search{
+    width: 25rem;
+}
+
+.main-content{
+    width: 100%;
+}
+
+
+.vr{
+    height: calc(4.1rem - 2.3rem);
+}
+
+.nav-link .img-profile{
+    height: 2rem;
+    width: 2rem;
 }
