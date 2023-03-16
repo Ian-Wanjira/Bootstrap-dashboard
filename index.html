@@ -26,6 +26,7 @@
     <title>Document</title>
   </head>
   <body>
+
     <!-- Main Container -->
     <!-- <div class="container-fluid">
       <div class="row flex-nowrap main">
@@ -266,10 +267,9 @@
       </div>
       
 
-      <div class="main-content d-flex flex-column">
-       
+      <div class="main-content d-flex flex-column">   
         <div class="content">
-          <nav class="navbar navbar-expand-lg shadow topbar ">
+          <nav class="navbar navbar-expand-lg shadow topbar mb-4">
             <div class="container-fluid hstack gap-3">
               <form class="input-group ms-5  navbar-search" role="search">
                 <input class="form-control " type="search" placeholder="Search" aria-label="Search">
@@ -277,8 +277,8 @@
               </form>
 
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a href="" class="nav-link">
+                <li class="nav-item dropdown ">
+                  <a href="" class="nav-link " type="button" data-bs-toggle="dropdown">
                     <i class="bi bi-bell-fill position-relative">
                       <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
                       
@@ -287,9 +287,13 @@
                     </i>
                     
                   </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a href="" class="dropdown-item">action</a></li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a href="" class="nav-link">
+                <li class="nav-item dropdown">
+                  <a href="" class="nav-link" type="button">
                     <i class="bi bi-envelope-fill position-relative">
                       <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
                         <span class="visually-hidden">unread messages</span>
@@ -310,18 +314,98 @@
             </div>  
           </nav>
 
-          <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+          <div class="container mb-4">
+            <div class="d-flex justify-content-between align-items-center">
+              <h1>Dashboard</h1>
+              <a href="" type="button" class="btn btn-primary"><i class="bi bi-download me-3"></i>Generate Report</a>
+            </div>
           </div>
+          
+          <div class="container text-center">
+            <div class="row text-start">
+              <div class="col">
+                <div class="card shadow-sm p-1 mb-5 bg-body-tertiary rounded  border-left-primary">
+                  <div class="card-body">
+                    <div class="hstack gap-3">
+                      <div class="d-block">
+                        <p class="card-title m-1 text-primary">EARNINGS (MONTHLY)</p>
+                        <p class="h5 text-start">$ 4,000</p>
+                      </div>
+                      <div class="ms-auto ">
+                        <i class="bi bi-calendar-fill  " style="font-size: 2rem; position: relative; top:-10px;"></i>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm p-1 mb-5 bg-body-tertiary rounded border-left-success">
+                  <div class="card-body">
+                    <div class="hstack gap-3">
+                      <div class="d-block">
+                        <p class="card-title m-1 text-success">EARNINGS (ANUALLY)</p>
+                        <p class="h5 text-start">$ 4,000</p>
+                      </div>
+                      <div class="ms-auto ">
+                        <i class="bi bi-currency-dollar" style="font-size: 2rem; position: relative; top:-10px;"></i>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm p-1 mb-5 bg-body-tertiary rounded border-left-info">
+                  <div class="card-body">
+                    <div class="hstack gap-3">
+                      <div class="container d-block">
+                        <p class="card-title m-1 text-info">TASKS</p>
+                        
+                        <div class="row ">
+                          <div class="col"><p class="h5">50%</p></div>
+                          <div class="col ">
+                            <div class="progress h-25" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-info" style="width: 50%"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ms-auto ">
+                        <i class="bi bi-clipboard-data-fill  " style="font-size: 2rem; position: relative; top:-10px;"></i>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm p-1 mb-5 bg-body-tertiary rounded border-left-warning">
+                  <div class="card-body">
+                    <div class="hstack gap-3">
+                      <div class="d-block">
+                        <p class="card-title m-1 text-warning">PENDING REQUESTS</p>
+                        <p class="h5">18</p>
+                      </div>
+                      <div class="ms-auto ">
+                        <i class="bi bi-chat-left-text-fill" style="font-size: 1.7rem; position: relative; top:-10px;"></i>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    
         </div>
-        
 
-        <div class="footer">
-          footer
-        </div>
+        <div class="footer">footer</div>
       </div>
     </div>
     

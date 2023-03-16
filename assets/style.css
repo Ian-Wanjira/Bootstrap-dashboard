@@ -63,6 +63,7 @@ li {
 
 .main-content{
     width: 100%;
+    background-color: #f8f9fc;
 }
 
 
@@ -74,4 +75,26 @@ li {
 .nav-link .img-profile{
     height: 2rem;
     width: 2rem;
+}
+
+
+.card-title{
+    font-size: .8em;
+    font-weight: 450;
+}
+
+.border-left-primary {
+    border-left: 0.25rem solid rgb(78, 115, 223) !important;
+}
+
+.border-left-success {
+    border-left: 0.25rem solid rgb(28, 200, 138) !important;
+}
+
+.border-left-info {
+    border-left: 0.25rem solid rgb(54, 185, 204) !important;
+}
+
+.border-left-warning {
+    border-left: 0.25rem solid rgb(246, 194, 62) !important;
 }
